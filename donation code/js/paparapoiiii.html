@@ -1,0 +1,41 @@
+<!Doctype html>
+<html>
+<head>
+<script>
+     function sum()
+    {
+     var a=parseInt(document.getElementById("t1").value);
+     var b=parseInt(document.getElementById("t2").value);
+      document.getElementById("t3").value=a+b;
+     }
+     function sub()
+     {
+         var a=parseInt(document.getElementById("t1").value);
+         var b=parseInt(document.getElementById("t2").value);
+         dacument.getElementById("t3").value=a-b;
+     }
+     function arithm()
+     {
+         var a=parseInt(document.getElementById("t1").value);
+         var b=pareseInt(document.getElementById("t2").value);
+         alart("sum is: " +(a+b));
+     }
+     {
+         var a=5,b=7;
+         alert("sum is:"+(a+b));
+         alert("subtraction is:"+(a-b));
+     }
+      
+</script>
+</head>
+<body>
+<form>
+Enter Number A:<input type="text" id="t1"><br>
+Enter Number B:<input type="text" id="t2"><br>
+Result:<input type="text" id="t3"><br>
+<input type="button" value="sum" onclick="sum()">
+<input type="button"value="sub"onclick="sub()">
+
+</form>
+</body>
+</html>

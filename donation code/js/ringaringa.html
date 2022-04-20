@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function sum()
+{
+var a=parseFloat(document.getElementById("t1").value);
+var b=parseFloat(document.getElementById("t2").value);
+document.getElementById("t3").value=a+b;
+}
+function sub()
+{
+var a=parseFloat(document.getElementById("t1").value);
+var b=parseFloat(document.getElementById("t2").value);
+document.getElementById("t3").value=a-b;
+}
+function mul()
+{
+var a=parseFloat(document.getElementById("t1").value);
+var b=parseFloat(document.getElementById("t2").value);
+document.getElementById("t3").value=a*b;
+}
+function div()
+{
+var a=parseFloat(document.getElementById("t1").value);
+var b=parseFloat(document.getElementById("t2").value);
+document.getElementById("t3").value=a/b;
+}
+function arithm()
+{
+var a=parseFloat(document.getElementById("t1").value);
+var b=parseFloat(document.getElementById("t2").value);
+alert("sum is: " + (a+b));
+}
+function arithm1()
+{
+var a=5, b=7
+alert("sum is: " + (a+b));
+alert("sub is: " + (a-b));
+}
+</script>
+</head>
+<body>
+<form>
+<h1 onclick="arithm()">click me to show the result in alert box</h1>
+<h1 onclick="arithm1()">click me</h2>
+enter number A:<input type="text" id="t1"><br>
+enter number B:<input type="text" id="t2"><br>
+result: <input type="text" id="t3" disabled><br>
+<input type="button" value="sum" onclick="sum()"><br>
+<input type="button" value="sub" onclick="sub()"><br>
+<input type="button" value="mul" onclick="mul()"><br>
+<input type="button" value="div" onclick="div()"><br>
+</form>
+</body>
+</html>
